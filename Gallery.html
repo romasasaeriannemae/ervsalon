@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+        <nav class="navbar">
+            <div class="logo">ErV's Salon</div>
+            <br><hr><br>
+            <ul class="nav-links">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                 <li><a href="contactus.html">Contuct us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Gallery -->
+<section id="gallery" class="gallery">
+    <br><br><br><br>
+    <h3>Gallery</h3>
+
+    <!-- GALLERY SECTION -->
+<div class="gallery-container">
+
+    <!-- MEN HAIR STYLE -->
+    <div class="gallery-box" onclick="openMenGallery()">
+        <h2>Men Hair Style</h2>
+    </div>
+
+    <!-- WOMEN HAIR STYLE -->
+    <div class="gallery-box" onclick="openWomenGallery()">
+        <h2>Women Hair Style</h2>
+    </div>
+
+    <!-- NAIL ART -->
+    <div class="gallery-box" onclick="openNailGallery()">
+        <h2>Nail Art</h2>
+    </div>
+
+    <!-- BEAUTY CARE -->
+    <div class="gallery-box" onclick="openBeautyGallery()">
+        <h2>Beauty Care</h2>
+    </div>
+
+</div>
+
+<!-- MEN POPUP -->
+<div class="popup-gallery" id="menGallery">
+
+    <span class="close-btn" onclick="closeMenGallery()">✖</span>
+
+    <div class="popup-content">
+
+        <div class="hair-card">
+            <img src="fade cut.jpg">
+        <pre> 
+            Fade Cut
+            50.00 php
+            </pre>
+        </div>
+
+        <div class="hair-card">
+            <img src="under cut.jpg">
+
+       <pre>
+            Undercut
+            50.00 php
+            </pre>
+        </div>
+
+        <div class="hair-card">
+            <img src="Buzz Cut.jpeg">
+       <pre>
+            Buzz Cut
+            50.00 php
+            </pre>
+        </div>
+
+    </div>
+</div>
+
+<!-- WOMEN POPUP -->
+<div class="popup-gallery" id="womenGallery">
+
+    <span class="close-btn" onclick="closeWomenGallery()">✖</span>
+
+    <div class="popup-content">
+
+        <div class="hair-card">
+            <img src="haircutgirls.jpeg">
+        <pre>
+            Hair Cut
+            60.00 php</pre>
+        </div>
+
+        <div class="hair-card">
+            <img src="haircolor.png">
+        <pre>
+            Hair Color
+            3,000.00 php
+
+            </pre>
+        </div>
+
+        <div class="hair-card">
+            <img src="rebond.jpg">
+            <pre> 
+            Hair Rebond
+            1,500 php
+
+            </pre>
+        </div>
+
+    </div>
+</div>
+
+<!-- NAIL ART POPUP -->
+<div class="popup-gallery" id="nailGallery">
+
+    <span class="close-btn" onclick="closeNailGallery()">✖</span>
+
+    <div class="popup-content">
+
+        <div class="hair-card">
+            <img src="manicure and pedicure.png">
+        <pre>
+            Manicure and Pedicure
+            100.00 php
+        </pre>
+        </div>
+
+        <div class="hair-card">
+            <img src="Nail Art.png">
+        <pre>
+            Nail Arts
+            70.00 php
+        </pre>
+        </div>
+
+        <div class="hair-card">
+            <img src="Gel Polish.jpg">
+        <pre>
+            Gel Polish
+            60.00 php
+
+            </pre>
+        </div>
+
+    </div>
+</div>
+
+<!-- BEAUTY CARE POPUP -->
+<div class="popup-gallery" id="beautyGallery">
+
+    <span class="close-btn" onclick="closeBeautyGallery()">✖</span>
+
+    <div class="popup-content">
+
+        <div class="hair-card">
+            <img src="facialmakeup.jpeg">
+        <pre>
+            Facial Makeup
+            500.00 php
+        </pre>
+        </div>
+
+        <div class="hair-card">
+            <img src="eyelash.webp">
+        <pre>
+            Eyelash
+            200.00 php
+        </pre>
+        </div>
+
+        <div class="hair-card">
+            <img src="skincare.webp">
+        <pre>
+            Skincare
+            600.00 php
+        </p>
+        </div>
+
+    </div>
+</div>
+<script>
+
+/* MEN */
+function openMenGallery(){
+    document.getElementById("menGallery").style.display = "flex";
+}
+
+function closeMenGallery(){
+    document.getElementById("menGallery").style.display = "none";
+}
+
+/* WOMEN */
+function openWomenGallery(){
+    document.getElementById("womenGallery").style.display = "flex";
+}
+
+function closeWomenGallery(){
+    document.getElementById("womenGallery").style.display = "none";
+}
+
+/* NAIL */
+function openNailGallery(){
+    document.getElementById("nailGallery").style.display = "flex";
+}
+
+function closeNailGallery(){
+    document.getElementById("nailGallery").style.display = "none";
+}
+
+/* BEAUTY */
+function openBeautyGallery(){
+    document.getElementById("beautyGallery").style.display = "flex";
+}
+
+function closeBeautyGallery(){
+    document.getElementById("beautyGallery").style.display = "none";
+}
+
+</script>
+</section>
+
+</body>
+</html>
+    
